@@ -1,0 +1,27 @@
+body{
+    background-color: darkseagreen;
+}
+h1{
+    color: chocolate;
+    font-size: larger;
+}
+.divColor{
+background-color: beige;
+border-style: dashed;
+border-color: blue;
+border-width: 2mm;
+}
+.mydiv1{
+position: absolute;
+top:10mm; 
+left:10mm;
+width:50mm;
+height:50mm;
+}
+.mydiv2{
+    position: absolute;
+    top:10mm; 
+    left:75mm;
+    width:50mm;
+    height:50mm;
+    }

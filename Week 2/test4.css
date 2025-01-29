@@ -1,0 +1,23 @@
+body{
+    background-color:aquamarine;
+}
+.grid1{
+    display: grid;
+    grid-template-columns: 20mm 20mm 20mm 20mm 20mm;
+    grid-template-rows:30mm 30mm 30mm;
+}
+.item1{
+    border-style:dashed;
+    border-color: blue;
+    border-width: 1mm;
+    background-color:darkturquoise;
+}
+.item2{
+    border-style:dashed;
+    border-color: red;
+    border-width: 1mm;
+    background-color:rgb(225,235,235);
+}
+.item3{
+    grid-column:1/4;
+}

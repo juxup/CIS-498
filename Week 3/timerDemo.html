@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+            var x=0;
+            function xValue(){
+                x=x+1;
+                document.getElementById("div1").innerHTML="<h1>The value of x is " + x + "</h1>";
+                if(x>10){
+                    x=1;
+                }
+            }
+
+            setInterval(()=>{x=x+1;
+                document.getElementById("div1").innerHTML="<h1>The value of x is " + x + "</h1>";}, 2000);
+        </script>
+    </head>
+    <body>
+        <h1> See Timer Changing Values:</h1>
+        <div id="div1"></div>
+    </body>
+</html>
