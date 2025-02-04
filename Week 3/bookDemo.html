@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <script type="text/javascript" src="books.js"></script>
+        <script>
+            var ptr=0;
+            function prev(){
+                if(ptr==0){
+                    ptr=books.length-1;
+                }
+                else {ptr=ptr-1;}
+                document.getElementById("title").value=books[ptr].title;
+                document.getElementById("author").value=books[ptr].author;
+                document.getElementById("price").value=books[ptr].price;
+            }
+            function next(){
+                if(ptr==books.length-1){
+                    ptr=0;
+                }
+                else {ptr=ptr+1;}
+                document.getElementById("title").value=books[ptr].Title;
+                document.getElementById("author").value=books[ptr].author;
+                document.getElementById("price").value=books[ptr].price;
+            }
+            function next2(){
+                ptr=0;
+                if(ptr==books.length-1){
+                    ptr=0;
+                }
+                else {ptr=ptr+1;}
+                document.getElementById("title2").value=books[ptr].Title;
+                document.getElementById("author2").value=books[ptr].author;
+                document.getElementById("price2").value=books[ptr].price;
+            }
+            setInterval(next2,1000);
+        </script>
+    </head>
+    <body>
+        <h1>See my Books</h1>
+        Book Title <input type ="text" id="title" readonly/><br>
+        Book Author <input type ="text" id="author" readonly/><br>
+        Book Price <input type ="text" id="price" readonly/><br>
+        <input type ="button" value="<-Prev" onclick="prev()"/>
+        <input type ="button" value="next->" onclick="next()"/>
+        <br>
+        <br>
+        Book Title <input type ="text" id="title2" readonly/><br>
+        Book Author <input type ="text" id="author2" readonly/><br>
+        Book Price <input type ="text" id="price2" readonly/><br>
+
+    </body>
+</html>

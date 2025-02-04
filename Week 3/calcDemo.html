@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script>
+            function checkSum(){
+                var n1=parseFloat(document.getElementById("num1").value);
+                var n2=parseFloat(document.getElementById("num2").value);
+                document.getElementById("sum").value=(n1+n2);
+
+            }
+        </script>
+    </head>
+    <body>
+        Enter first number <input type="text" id="num1" value="0" onchange="checkSum()"/>
+        Enter second number <input type="text" id="num2" value="0" onchange="checkSum()"/>
+        The result is <input type="text" id="sum" value="0"/>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script>
+            async function getCars(){
+                for(var i=0; i<4000; i++){
+                    for(var k=0; k<4000; k++){}
+                }
+                var car_col=[
+                {"make": "Honda", "model": "CRV"},
+                {"make": "Toyota", "model": "Camry"},
+                {"make": "Hyundai", "model": "Santa Fe"},
+                {"make": "Nissan", "model": "Cube"}];
+                return car_col;
+            }
+
+            async function myCar(){
+                let carData=await getCars();
+                var cid=document.getElementById("id").value;
+                let carInfo="<h1>" + carData[cid-1].make + "</h1>";
+                document.getElementById("div1").innerHTML=carInfo;
+            }
+        </script>
+    </head>
+    <body>
+        Please Input the Car number<input type="text" id="id"/>
+        <input type="button" value="Get Car" onclick="myCar()"/>
+        <div id="div1"></div>
+    </body>
+</html>
