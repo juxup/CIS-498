@@ -1,5 +1,170 @@
 <html>
     <head>
-        <h1></h1>
+        <title>David Lynch Fan Club</title>
+        <link rel="stylesheet" href="lab1.css"/>
+        <style>
+            body{
+                background-color:rgb(150, 83, 189);
+            }
+        </style>
     </head>
+    <body>
+        <h3>Favorite Lynch Films</h3>
+        <div class="container">
+    <div class="card">
+        <img src="images/twinpeaksreturn.jpg" usemap="#workmap1">
+        
+        <map name="workmap1">
+            <area shape="rect" coords="1,1,350,600" href="https://en.wikipedia.org/wiki/Twin_Peaks"/>
+        </map>
+        <h1 id="specific-class">Twin Peaks</h1>
+        <p>Who Killed Laura Palmer?</p>
+        <ul>
+            <li>Created by David Lynch and Mark Frost.</li>
+            <li>"Who killed Laura Palmer?" became iconic.</li>
+            <li>Canceled but revived in 2017.</li>
+        </ul>
+    </div>
+    <div class="card">
+        <img src="images/fwwm.jpg" usemap="#workmap2">
+        <map name="workmap2">
+            <area shape="rect" coords="1,1,350,600" href="https://en.wikipedia.org/wiki/Twin_Peaks:_Fire_Walk_with_Me"/>
+        </map>
+        <h1>Twin Peaks: Fire Walk With Me</h1>
+        <p>In a town like Twin Peaks, no one is innocent.</p>
+        <ul>
+            <li>Prequel exploring Laura Palmer's final days.</li>
+            <li>Booed at Cannes but gained a cult following.</li>
+            <li>David Bowie played Agent Phillip Jeffries.</li>
+        </ul>
+    </div>
+    <div class="card">
+        <img src="images/mhdr.jpg" usemap="#workmap3">
+        <map name="workmap3">
+            <area shape="rect" coords="1,1,350,600" href="https://en.wikipedia.org/wiki/Mulholland_Drive_(film)"/>
+        </map>
+        <h1>Mulholland Drive</h1>
+        <p>A love story in the city of dreams.</p>
+        <h2>Clues to solving Mulholland Drive</h2>
+        <ol>
+            <li>Pay particular attention to the beginning of the film: At least two clues are revealed before the credits</li>
+            <li>Notice appearances of the red lampshade</li>
+            <li>Can you hear the title of the film that Adam Kesher is auditioning actresses for? Is it mentioned again?</li>
+            <li>An accident is a terrible event … Notice the location of the accident</li>
+        </ol>
+    </div>
+    <div class="card">
+        <img src="images/Inland-Empire-Poster.jpg" usemap="#workmap4">
+        <map name="workmap4">
+            <area shape="rect" coords="1,1,350,600" href="https://en.wikipedia.org/wiki/Inland_Empire_(film)"/>
+        </map>
+        <h1>Inland Empire</h1>
+        <p>A Woman In Trouble</p>
+        <h2>Tidbits</h2>
+        <ul>
+            <li>Lynch's last feature</li>
+            <li>Filmed without a script</li>
+            <li>Started as a 70 minute monologue</li>
+            <li>Filmed on a Sony PD-150</li>
+        </ul>
+    </div>
+    <div class="card">
+        <img src="images/return.jpg" usemap="#workmap5">
+        <map name="workmap5">
+            <area shape="rect" coords="1,1,350,600" href="https://en.wikipedia.org/wiki/Twin_Peaks_season_3"/>
+        </map>
+        <h1>Twin Peaks: The Return</h1>
+        <p>It is happening again.</p>
+        <ul>
+            <li>Filmed 25 years after the show </li>
+            <li>18 hours long</li>
+            <li>Named best film of the 2010s</li>
+        </ul>
+    </div>
+    <div>
+            <h4>Filmography</h4>
+            <table> 
+                <tr>
+                    <th>Title</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td>Eraserhead</td>
+                    <td>1977</td>
+                </tr>
+                <tr>
+                    <td>The Elephant Man</td>
+                    <td>1980</td>
+                </tr>
+                <tr>
+                    <td>Dune</td>
+                    <td>1984</td>
+                </tr>
+                <tr>
+                    <td>Blue Velvet</td>
+                    <td>1986</td>
+                </tr>
+                <tr>
+                    <td>Wild at Heart</td>
+                    <td>1990</td>
+                </tr>
+                <tr>
+                    <td>Twin Peaks: Fire Walk with Me</td>
+                    <td>1992</td>
+                </tr>
+                <tr>
+                    <td>Lost Highway</td>
+                    <td>1997</td>
+                </tr>
+                <tr>
+                    <td>The Straight Story</td>
+                    <td>1999</td>
+                </tr>
+                <tr>
+                    <td>Mulholland Drive</td>
+                    <td>2001</td>
+                </tr>
+                <tr>
+                    <td>Inland Empire</td>
+                    <td>2006</td>
+                </tr>
+            </table>
+    </div>
+    </div>
+    <div>
+        <p>David Lynch Fan Club</p>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="name"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password"><br><br>
+            <p>Choose your favorite Movie</p>
+            <input type="radio" name="lynchMovie" value="Eraserhead"> Eraserhead
+            <input type="radio" name="lynchMovie" value="ElephantMan">Elephant Man
+            <input type="radio" name="lynchMovie" value="Dune">Dune
+            <input type="radio" name="lynchMovie" value="Blue Velvet">Blue Velvet
+            <input type="radio" name="lynchMovie" value="Wild">Wild at Heart
+            <br>
+            <input type="radio" name="lynchMovie" value="FWWM">Fire Walk With Me
+            <input type="radio" name="lynchMovie" value="Mulholland">Mulholland Drive
+            <input type="radio" name="lynchMovie" value="Straight">The Straight Story
+            <input type="radio" name="lynchMovie" value="Inland">Inland Empire
+
+            <br><br>
+            <p>What kind of pie do you like?</p>
+            <input type="checkBox" name="pie" name="pie" value="1">Cherry
+            <input type="checkBox" name="pie" name="pie" value="2">Apple
+            <input type="checkBox" name="pie" name="pie" value="3">I don't like pie
+
+            <br><br>
+            <label for="coffee">Do you like your coffee black?:</label>
+            <select id="coffee">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select><br><br>
+            <button type="join">Join</button>
+            <button type="cancel">Cancel</button>
+        </form>
+    </div>
+</body>
 </html>

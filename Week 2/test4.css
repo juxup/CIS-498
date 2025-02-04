@@ -3,8 +3,8 @@ body{
 }
 .grid1{
     display: grid;
-    grid-template-columns: 20mm 20mm 20mm 20mm 20mm;
-    grid-template-rows:30mm 30mm 30mm;
+    grid-template-columns: 20px 20px 20px 20px 20px;
+    grid-gap:10px;
 }
 .item1{
     border-style:dashed;
